@@ -1,5 +1,5 @@
 // ESP32_cam webcam server with servo control for 1. servo
-// OTA update implemented successful - UID:jopare PW:just4fun 
+// OTA update implemented successful - UID:admin PW:admin 
 // Compiler data - Board: ESP32 Wroover - minimal SPIFFS 1.9MB App with OTA 190/kb SPIFFS QIO
 // WiFi multi takes sometimes time to connect - needs to be investigated
 
@@ -78,7 +78,7 @@ const char* loginIndex =
 "<script>"
     "function check(form)"
     "{"
-    "if(form.userid.value=='jopare' && form.pwd.value=='just4fun')"
+    "if(form.userid.value=='admin' && form.pwd.value=='admin')"
     "{"
     "window.open('/serverIndex')"
     "}"
@@ -184,9 +184,9 @@ void setup() {
     return;
   }
 
-  wifiMulti.addAP("SW LXIV", "diebrummsummselbrummt1.undsummt2.herum");
-  wifiMulti.addAP("NSA Sniffer", "irgend1oderso");
-  //wifiMulti.addAP("ssid_from_AP_3", "your_password_for_AP_3");
+  wifiMulti.addAP("ssid_from_AP_1", "your_password_for_AP_1");
+  wifiMulti.addAP("ssid_from_AP_2", "your_password_for_AP_2");
+  wifiMulti.addAP("ssid_from_AP_3", "your_password_for_AP_3");
 
   Serial.println("Connecting Wifi...");
   if (wifiMulti.run() == WL_CONNECTED) {
