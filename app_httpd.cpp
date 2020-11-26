@@ -111,10 +111,10 @@ static const char PROGMEM INDEX2_HTML[] = R"rawliteral(
 <body>
 
 <div class="container" style="rotate:180deg">
-  <img src="http://192.168.0.177:81/stream"  width="1280px" height="auto">  
+  <img src="http://192.168.x.xxx:81/stream"  width="1280px" height="auto">  
   <button class="links" onclick="getsend('links')";>>></button>
   <button class="rechts" onclick="getsend('rechts')";><<</button>
-  <button class="mitte" style="rotate:180deg" onclick="getsend('reboot')";>NSA-Cam &nbsp;&nbsp;&nbsp;&#x00A9; by J.R.</button> 
+  <button class="mitte" style="rotate:180deg" onclick="getsend('reboot')";>ESP32 reboot</button> 
 </div>
 
 </body>
